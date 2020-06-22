@@ -1,4 +1,4 @@
-{% set version = '0.0.1' %}
+{% set version = "0.0.2" %}
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
 
@@ -10,11 +10,11 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/modeldata_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/modeldata/modeldata_{{ version }}.tar.gz
-  sha256: 29171bb8ba421aa260e1edb89850437c52164a4536feddefc50f02f3ca7af237
+  sha256: 34046b43aeff5dbbb26464e481b1d2e19ad41de7d1fc85de96962fcc1784068f
 
 build:
-  merge_build_host: True  # [win]
-  number: 1
+  merge_build_host: true  # [win]
+  number: 0
   noarch: generic
   rpaths:
     - lib/R/lib/
@@ -36,8 +36,7 @@ test:
 about:
   home: https://github.com/tidymodels/modeldata
   license: MIT
-  summary: Data sets used for demonstrating or testing model-related packages are contained in
-    this package.
+  summary: Data sets used for demonstrating or testing model-related packages are contained in this package.
   license_family: MIT
   license_file:
     - {{ environ["PREFIX"] }}/lib/R/share/licenses/MIT
