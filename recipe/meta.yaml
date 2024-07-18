@@ -1,6 +1,5 @@
 {% set version = "1.4.0" %}
 {% set posix = 'm2-' if win else '' %}
-{% set native = 'm2w64-' if win else '' %}
 
 package:
   name: r-modeldata
@@ -13,8 +12,7 @@ source:
   sha256: eb69b43143bf153a3170cdcc92810445a03fc94830e7d6ad521fb1e0e0de8e95
 
 build:
-  merge_build_host: true  # [win]
-  number: 0
+  number: 1
   noarch: generic
   rpaths:
     - lib/R/lib/
