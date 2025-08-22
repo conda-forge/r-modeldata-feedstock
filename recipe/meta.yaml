@@ -1,4 +1,4 @@
-{% set version = "1.5.0" %}
+{% set version = "1.5.1" %}
 {% set posix = 'm2-' if win else '' %}
 
 package:
@@ -9,7 +9,7 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/modeldata_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/modeldata/modeldata_{{ version }}.tar.gz
-  sha256: abd72004512a93ce2773c0cba2d7c1c980e8e4d80a06820ede9558917a31b4ea
+  sha256: f7b760c38d8a36993fadbb64bfbba52fb0e66156529839d0ae6f4ad032a6c79c
 
 build:
   number: 0
